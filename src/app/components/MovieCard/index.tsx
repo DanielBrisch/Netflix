@@ -4,7 +4,7 @@ type MovieCardProps = {
     poster?: string,
 }
 
-function MovieCard(props: MovieCardProps) {
+function MovieCard({ poster }: MovieCardProps) {
     return (
         <Paper
             component="a"
@@ -12,11 +12,11 @@ function MovieCard(props: MovieCardProps) {
             href="/1"
             sx={{ minWidth: '10rem' }}
         >
-            <img src={props.poster} style={{
+            <img src={poster} style={{
                 width: '100%'
             }} />
         </Paper>
     )
 }
 
-export default MovieCard;
+export default MovieCard;   
