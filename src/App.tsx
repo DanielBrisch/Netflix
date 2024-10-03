@@ -1,22 +1,24 @@
-import Header from "./app/components/Header"
 import Footer from "./app/components/Footer"
-import Section from "./app/components/Section"
+import Header from "./app/components/Header"
 import HighLightSection from "./app/components/HighlightSection"
+import Section from "./app/components/Section"
 
 function App() {
 
   return (
-    <>
-      <div className="wrapper">
-        <Header />
-        <main style={{ marginTop: '8rem' }}>
-          <HighLightSection />
-          <Section title="Para toda família" />
-          <Section title="Recomendados" />
-        </main>
-        <Footer />
-      </div>
-    </>
+    <div className="wrapper">
+      <Header />
+      <main
+        style={{
+          marginTop: '8rem'
+        }}
+      >
+        <HighLightSection />
+        <Section title="Recomendados para Você" />
+        <Section title="Para toda sua Família" />
+      </main>
+      <Footer />
+    </div>
   )
 }
 
