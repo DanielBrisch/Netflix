@@ -1,27 +1,21 @@
 import { Box, Container, Stack, Typography } from "@mui/material";
 import MovieCard from "../MovieCard";
-
-const movies = [
-  { poster: 'house-of-dragons-poster.jpg' },
-  { poster: 'gyEnhITeHLky85XJxuTPqniPrzE.jpg' },
-  { poster: '9h2KgGXSmWigNTn3kQdEFFngj9i.jpg' },
-  { poster: 'house-of-dragons-poster.jpg' },
-  { poster: 'gyEnhITeHLky85XJxuTPqniPrzE.jpg' },
-  { poster: '9h2KgGXSmWigNTn3kQdEFFngj9i.jpg' },
-  { poster: 'house-of-dragons-poster.jpg' },
-  { poster: 'gyEnhITeHLky85XJxuTPqniPrzE.jpg' },
-  { poster: '9h2KgGXSmWigNTn3kQdEFFngj9i.jpg' },
-  { poster: 'house-of-dragons-poster.jpg' },
-  { poster: 'gyEnhITeHLky85XJxuTPqniPrzE.jpg' },
-  { poster: '9h2KgGXSmWigNTn3kQdEFFngj9i.jpg' }
-];
+import { useEffect, useState } from "react";
+import { IMovie } from "../../@libs/types";
 
 type SectionProps = {
   title: string;
 }
+
 function Section({
   title
 }: SectionProps) {
+  const [movies, setMovies] = useState<IMovie[]>( []);
+
+  useEffect(() => {
+
+  }, [movies]);
+
   return (
     <Box>
       <Container>
